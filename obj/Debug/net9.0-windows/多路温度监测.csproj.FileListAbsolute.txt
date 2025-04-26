@@ -1,0 +1,14 @@
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\bin\Debug\net9.0-windows\多路温度监测.exe
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\bin\Debug\net9.0-windows\多路温度监测.deps.json
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\bin\Debug\net9.0-windows\多路温度监测.runtimeconfig.json
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\bin\Debug\net9.0-windows\多路温度监测.dll
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\bin\Debug\net9.0-windows\多路温度监测.pdb
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\obj\Debug\net9.0-windows\多路温度监测.GeneratedMSBuildEditorConfig.editorconfig
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\obj\Debug\net9.0-windows\多路温度监测.AssemblyInfoInputs.cache
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\obj\Debug\net9.0-windows\多路温度监测.AssemblyInfo.cs
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\obj\Debug\net9.0-windows\多路温度监测.csproj.CoreCompileInputs.cache
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\obj\Debug\net9.0-windows\多路温度监测.dll
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\obj\Debug\net9.0-windows\refint\多路温度监测.dll
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\obj\Debug\net9.0-windows\多路温度监测.pdb
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\obj\Debug\net9.0-windows\多路温度监测.genruntimeconfig.cache
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\obj\Debug\net9.0-windows\ref\多路温度监测.dll

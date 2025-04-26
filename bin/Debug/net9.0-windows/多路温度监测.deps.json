@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "多路温度监测/1.0.0": {
+        "runtime": {
+          "多路温度监测.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "多路温度监测/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
