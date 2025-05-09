@@ -1,3 +1,10 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+
 namespace 多路温度监测;
 
 static class Program
@@ -10,6 +17,7 @@ static class Program
     {
         // To customize application configuration such as set high DPI settings or default font,
         // see https://aka.ms/applicationconfiguration.
+        db.Open_db();
         ApplicationConfiguration.Initialize();
         Application.Run(new Form1());
     }
