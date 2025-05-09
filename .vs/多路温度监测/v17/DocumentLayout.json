@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\StudyDocuments\\C#2025\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{77A30E6A-A3CC-4A92-8E88-0901310C6472}|\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj|e:\\studydocuments\\c#2025\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{77A30E6A-A3CC-4A92-8E88-0901310C6472}|\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj|solutionrelative:\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77A30E6A-A3CC-4A92-8E88-0901310C6472}|\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj|e:\\studydocuments\\c#2025\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A30E6A-A3CC-4A92-8E88-0901310C6472}|\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj|solutionrelative:\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77A30E6A-A3CC-4A92-8E88-0901310C6472}|\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj|e:\\studydocuments\\c#2025\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{77A30E6A-A3CC-4A92-8E88-0901310C6472}|\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj|solutionrelative:\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "E:\\StudyDocuments\\C#2025\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\Form1.Designer.cs",
+              "ToolTip": "E:\\StudyDocuments\\C#2025\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\Form1.Designer.cs",
+              "RelativeToolTip": "\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T13:36:35.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj",
+              "DocumentMoniker": "E:\\StudyDocuments\\C#2025\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj",
+              "RelativeDocumentMoniker": "\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj",
+              "ToolTip": "E:\\StudyDocuments\\C#2025\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj",
+              "RelativeToolTip": "\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-26T13:26:00.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\StudyDocuments\\C#2025\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\Form1.cs",
+              "RelativeDocumentMoniker": "\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\Form1.cs",
+              "ToolTip": "E:\\StudyDocuments\\C#2025\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\Form1.cs [Design]",
+              "RelativeToolTip": "\u591A\u8DEF\u6E29\u5EA6\u76D1\u6D4B\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T13:23:49.217Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
