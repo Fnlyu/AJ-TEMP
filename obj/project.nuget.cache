@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2XiCDY187Kw=",
+  "dgSpecHash": "kzRXJhZcALY=",
   "success": true,
   "projectFilePath": "E:\\StudyDocuments\\C#2025\\多路温度监测\\多路温度监测\\多路温度监测.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\FBIx0\\.nuget\\packages\\mqttnet\\5.0.1.1416\\mqttnet.5.0.1.1416.nupkg.sha512",
+    "C:\\Users\\FBIx0\\.nuget\\packages\\mqttnet\\4.3.6.1152\\mqttnet.4.3.6.1152.nupkg.sha512",
     "C:\\Users\\FBIx0\\.nuget\\packages\\runtime.android-arm.runtime.native.system.io.ports\\9.0.4\\runtime.android-arm.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
     "C:\\Users\\FBIx0\\.nuget\\packages\\runtime.android-arm64.runtime.native.system.io.ports\\9.0.4\\runtime.android-arm64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",
     "C:\\Users\\FBIx0\\.nuget\\packages\\runtime.android-x64.runtime.native.system.io.ports\\9.0.4\\runtime.android-x64.runtime.native.system.io.ports.9.0.4.nupkg.sha512",

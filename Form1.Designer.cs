@@ -43,6 +43,7 @@ partial class Form1
         dd4 = new System.Windows.Forms.Label();
         timer1 = new System.Windows.Forms.Timer(components);
         comreceive = new System.Windows.Forms.TextBox();
+        KEY = new System.Windows.Forms.Label();
         SuspendLayout();
         // 
         // d1
@@ -167,11 +168,21 @@ partial class Form1
         comreceive.Size = new System.Drawing.Size(544, 116);
         comreceive.TabIndex = 11;
         // 
+        // KEY
+        // 
+        KEY.Font = new System.Drawing.Font("OPPO Sans", 23.999998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)134));
+        KEY.Location = new System.Drawing.Point(545, 242);
+        KEY.Name = "KEY";
+        KEY.Size = new System.Drawing.Size(177, 53);
+        KEY.TabIndex = 13;
+        KEY.Text = "ON/OFF";
+        // 
         // Form1
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(835, 647);
+        Controls.Add(KEY);
         Controls.Add(comreceive);
         Controls.Add(dd4);
         Controls.Add(dd3);
@@ -185,9 +196,12 @@ partial class Form1
         Controls.Add(d4);
         Controls.Add(d1);
         Text = "Form1";
+        Load += Form1_Load;
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Label KEY;
 
     private System.Windows.Forms.TextBox comreceive;
 

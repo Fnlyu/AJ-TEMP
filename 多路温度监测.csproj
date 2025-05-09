@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="MQTTnet" Version="5.0.1.1416" />
+      <PackageReference Include="MQTTnet" Version="4.3.6.1152" />
       <PackageReference Include="runtime.native.System.IO.Ports" Version="9.0.4" />
       <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
       <PackageReference Include="System.IO.Ports" Version="9.0.0" />
@@ -17,6 +17,7 @@
 
     <ItemGroup>
       <Compile Remove="OnenetMQTT.cs" />
+      <Compile Remove="DB1.cs" />
     </ItemGroup>
 
 </Project>

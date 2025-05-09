@@ -5,6 +5,7 @@ using System.IO.Ports;
 
 public partial class Form1 : Form
 {
+    myOneNet _mqtt1 = new myOneNet();
     private SerialPort _port1; // 将 SerialPort 定义为类的字段
     private bool _isOpen = false; // 串口状态
 
@@ -74,15 +75,32 @@ public partial class Form1 : Form
             {
                 // 读取数据
                 string data = _port1.ReadExisting();
+                string key = "";
                 comreceive.Text = data;
                 // 处理数据
                 string[] values = data.Split(';');
                 if (values.Length >= 4)
                 {
                     dd1.Text = values[0]+ "°C";
+                    _mqtt1.上传数据("Temperature1", values[0]);
                     dd2.Text = values[1]+ "°C";
+                    _mqtt1.上传数据("Temperature2", values[1]);
                     dd3.Text = values[2]+ "°C";
-                    dd4.Text = values[3]+ "°C";
+                    _mqtt1.上传数据("Temperature3", values[2]);
+                    if (values[3] == "1")
+                    {
+                        KEY.Text = "开";
+                        key = "ON";
+                        _mqtt1.上传数据("KEY", "1");
+                    }
+                    else if(values[3] == "0")
+                    {
+                        KEY.Text = "关";
+                        key = "OFF";
+                        _mqtt1.上传数据("KEY", "0");
+                    }
+                    
+                    db.Insert_data(values[0]+ "°C", values[1]+ "°C", values[2]+ "°C", key);
                 }
             }
             catch (Exception ex)
@@ -90,5 +108,11 @@ public partial class Form1 : Form
                 MessageBox.Show("读取数据失败：" + ex.Message);
             }
         }
+    }
+
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        _mqtt1.Init();
     }
 }
