@@ -31,7 +31,6 @@ partial class Form1
     {
         components = new System.ComponentModel.Container();
         d1 = new System.Windows.Forms.Label();
-        d4 = new System.Windows.Forms.Label();
         d3 = new System.Windows.Forms.Label();
         d2 = new System.Windows.Forms.Label();
         comboBox1 = new System.Windows.Forms.ComboBox();
@@ -40,10 +39,12 @@ partial class Form1
         dd1 = new System.Windows.Forms.Label();
         dd2 = new System.Windows.Forms.Label();
         dd3 = new System.Windows.Forms.Label();
-        dd4 = new System.Windows.Forms.Label();
         timer1 = new System.Windows.Forms.Timer(components);
         comreceive = new System.Windows.Forms.TextBox();
         KEY = new System.Windows.Forms.Label();
+        timer2 = new System.Windows.Forms.Timer(components);
+        button1 = new System.Windows.Forms.Button();
+        button2 = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // d1
@@ -55,17 +56,6 @@ partial class Form1
         d1.Size = new System.Drawing.Size(123, 53);
         d1.TabIndex = 0;
         d1.Text = "设备1";
-        // 
-        // d4
-        // 
-        d4.AutoSize = true;
-        d4.Font = new System.Drawing.Font("OPPO Sans 4.0", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)134));
-        d4.Location = new System.Drawing.Point(107, 377);
-        d4.Name = "d4";
-        d4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-        d4.Size = new System.Drawing.Size(126, 53);
-        d4.TabIndex = 1;
-        d4.Text = "设备4";
         // 
         // d3
         // 
@@ -146,15 +136,6 @@ partial class Form1
         dd3.TabIndex = 9;
         dd3.Text = "####";
         // 
-        // dd4
-        // 
-        dd4.Font = new System.Drawing.Font("OPPO Sans", 23.999998F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)134));
-        dd4.Location = new System.Drawing.Point(245, 377);
-        dd4.Name = "dd4";
-        dd4.Size = new System.Drawing.Size(177, 53);
-        dd4.TabIndex = 10;
-        dd4.Text = "####";
-        // 
         // timer1
         // 
         timer1.Enabled = true;
@@ -177,14 +158,40 @@ partial class Form1
         KEY.TabIndex = 13;
         KEY.Text = "ON/OFF";
         // 
+        // timer2
+        // 
+        timer2.Enabled = true;
+        timer2.Tick += timer2_Tick;
+        // 
+        // button1
+        // 
+        button1.Location = new System.Drawing.Point(151, 399);
+        button1.Name = "button1";
+        button1.Size = new System.Drawing.Size(130, 38);
+        button1.TabIndex = 14;
+        button1.Text = "button1";
+        button1.UseVisualStyleBackColor = true;
+        button1.Click += button1_Click;
+        // 
+        // button2
+        // 
+        button2.Location = new System.Drawing.Point(439, 400);
+        button2.Name = "button2";
+        button2.Size = new System.Drawing.Size(177, 36);
+        button2.TabIndex = 15;
+        button2.Text = "button2";
+        button2.UseVisualStyleBackColor = true;
+        button2.Click += button2_Click;
+        // 
         // Form1
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(835, 647);
+        Controls.Add(button2);
+        Controls.Add(button1);
         Controls.Add(KEY);
         Controls.Add(comreceive);
-        Controls.Add(dd4);
         Controls.Add(dd3);
         Controls.Add(dd2);
         Controls.Add(dd1);
@@ -193,7 +200,6 @@ partial class Form1
         Controls.Add(comboBox1);
         Controls.Add(d2);
         Controls.Add(d3);
-        Controls.Add(d4);
         Controls.Add(d1);
         Text = "Form1";
         Load += Form1_Load;
@@ -201,13 +207,18 @@ partial class Form1
         PerformLayout();
     }
 
+    private System.Windows.Forms.Button button2;
+
+    private System.Windows.Forms.Button button1;
+
+    private System.Windows.Forms.Timer timer2;
+
     private System.Windows.Forms.Label KEY;
 
     private System.Windows.Forms.TextBox comreceive;
 
     private System.Windows.Forms.Label dd2;
     private System.Windows.Forms.Label dd3;
-    private System.Windows.Forms.Label dd4;
     private System.Windows.Forms.Timer timer1;
 
     private System.Windows.Forms.Label dd1;
@@ -217,7 +228,6 @@ partial class Form1
     private System.Windows.Forms.ComboBox comboBox1;
     private System.Windows.Forms.Label serial1;
 
-    private System.Windows.Forms.Label d4;
     private System.Windows.Forms.Label d3;
     private System.Windows.Forms.Label d2;
 

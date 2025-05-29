@@ -39,7 +39,6 @@ public class db
             string strSQL = "INSERT INTO " + table + " (Time,Temperature1,Temperature2,Temperature3,Switch) "
                             + "VALUES ('" + DateTime.Now.ToString() + "','" + str1 + "','" + str2 + "','" + str3 +
                             "','" + str4 + "')";
-
             cmd.CommandText = strSQL; //插入数据SQL语句
             cmd.CommandType = CommandType.Text;
             int i = Convert.ToInt32(cmd.ExecuteScalar());
@@ -47,15 +46,15 @@ public class db
     }
 
 
-    public static void Insert_备忘录(DateTime dt, string str)
+    public static void Insert_kaiguan(string str)
     {
         if (conn.State == ConnectionState.Open)
         {
             var cmd = new SqlCommand();
             cmd.Connection = conn;
-            var table = "[备忘录]";
-            var strSQL = "INSERT INTO " + table + " (时间,信息) "
-                         + "VALUES ('" + dt.ToString() + "','" + str + "')";
+            var table = "[Table_1]";
+            var strSQL = "INSERT INTO " + table + " (Time,User) "
+                        + "VALUES ('" + DateTime.Now.ToString() + "','" + str + "')";
             cmd.CommandText = strSQL; //插入数据SQL语句
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteScalar();

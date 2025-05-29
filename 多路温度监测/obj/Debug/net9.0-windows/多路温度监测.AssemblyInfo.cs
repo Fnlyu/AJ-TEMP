@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("多路温度监测")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bf40a8d019a58a985babaa71d956f96f8145015")]
 [assembly: System.Reflection.AssemblyProductAttribute("多路温度监测")]
 [assembly: System.Reflection.AssemblyTitleAttribute("多路温度监测")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

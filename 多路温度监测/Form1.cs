@@ -8,21 +8,15 @@ public partial class Form1 : Form
     myOneNet _mqtt1 = new myOneNet();
     private SerialPort _port1; // 将 SerialPort 定义为类的字段
     private bool _isOpen = false; // 串口状态
-
+    string dataSendOn = "on";
+    string dataSendOff = "off";
+    
     public Form1()
     {
         InitializeComponent();
     }
 
-    private void comboBox1_DropDown(object sender, EventArgs e)
-    {
-        comboBox1.Items.Clear();
-        string[] ports = SerialPort.GetPortNames();
-        foreach (string port in ports)
-        {
-            comboBox1.Items.Add(port);
-        }
-    }
+
 
     private void serialconn_Click(object sender, EventArgs e)
     {
@@ -33,7 +27,7 @@ public partial class Form1 : Form
             {
                 try
                 {
-                    _port1 = new SerialPort(comboBox1.SelectedItem.ToString(), 9600, Parity.None, 8, StopBits.One);
+                    _port1 = new SerialPort(comboBox1.SelectedItem.ToString(), 115200, Parity.None, 8, StopBits.One);
                     _port1.Open();
                     _isOpen = true;
                     serialconn.Text = "断开";
@@ -87,15 +81,17 @@ public partial class Form1 : Form
                     _mqtt1.上传数据("Temperature2", values[1]);
                     dd3.Text = values[2]+ "°C";
                     _mqtt1.上传数据("Temperature3", values[2]);
-                    if (values[3] == "1")
+                    //需要修改////////////////////////////////////////////////////////////////////////////////////////////
+                    
+                    if (values[3] == "ON")
                     {
-                        KEY.Text = "开";
+                        KEY.Text = "ON";
                         key = "ON";
                         _mqtt1.上传数据("KEY", "1");
                     }
-                    else if(values[3] == "0")
+                    else if(values[3] == "OFF")
                     {
-                        KEY.Text = "关";
+                        KEY.Text = "OFF";
                         key = "OFF";
                         _mqtt1.上传数据("KEY", "0");
                     }
@@ -114,6 +110,70 @@ public partial class Form1 : Form
     private void Form1_Load(object sender, EventArgs e)
     {
         _mqtt1.Init();
+        //timer2.Enabled = true;
         
+    }
+    
+    private void comboBox1_DropDown(object sender, EventArgs e)
+    {
+        comboBox1.Items.Clear();
+        string[] ports = SerialPort.GetPortNames();
+        foreach (string port in ports)
+        {
+            comboBox1.Items.Add(port);
+        }
+    }
+
+    private void timer2_Tick(object sender, EventArgs e)
+    {
+        // String datetime;
+
+        
+        if (_isOpen)
+        {
+            try
+            {
+                if (_mqtt1.mqttClient1.IsConnected &&  _mqtt1.cmd != "")
+                {
+                    if (_mqtt1.cmd.IndexOf("on")>=0)
+                    {
+                        _port1.WriteLine(dataSendOn);
+                        KEY.Text = "ON";
+                        
+                        // db.Insert_kaiguan(dataSendOn);
+                    }
+                    else if (_mqtt1.cmd.IndexOf("off")>=0)
+                    {
+                        _port1.WriteLine(dataSendOff);
+                        // db.Insert_kaiguan(dataSendOff);
+                        KEY.Text = "OFF";
+                    }
+                    _mqtt1.cmd = "";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("读取数据失败：" + ex.Message);
+            }
+        }
+        
+    }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+
+        _port1.WriteLine(dataSendOn);
+        KEY.Text = "ON";
+        _mqtt1.上传数据("KEY", "1");
+
+    }
+
+    private void button2_Click(object sender, EventArgs e)
+    {
+
+        _port1.WriteLine(dataSendOff);
+        KEY.Text = "OFF";
+        _mqtt1.上传数据("KEY", "0");
+
     }
 }
