@@ -42,3 +42,4 @@ E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\bin\Debug\net9.0-
 E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\bin\Debug\net9.0-windows\runtimes\win-x86\native\sni.dll
 E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\bin\Debug\net9.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
 E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\bin\Debug\net9.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+E:\StudyDocuments\C#2025\多路温度监测\多路温度监测\obj\Debug\net9.0-windows\多路温度监测.sourcelink.json

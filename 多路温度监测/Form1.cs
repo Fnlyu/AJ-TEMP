@@ -122,8 +122,7 @@ public partial class Form1 : Form
         {
             comboBox1.Items.Add(port);
         }
-    }
-
+    }    
     private void timer2_Tick(object sender, EventArgs e)
     {
         // String datetime;
@@ -135,18 +134,19 @@ public partial class Form1 : Form
             {
                 if (_mqtt1.mqttClient1.IsConnected &&  _mqtt1.cmd != "")
                 {
+                    // 直接将接收到的完整MQTT消息转发到串口
+                    _port1.WriteLine(_mqtt1.cmd);
+                    
                     if (_mqtt1.cmd.IndexOf("on")>=0)
                     {
-                        _port1.WriteLine(dataSendOn);
                         KEY.Text = "ON";
                         
-                        // db.Insert_kaiguan(dataSendOn);
+                        // db.Insert_kaiguan(_mqtt1.cmd);
                     }
                     else if (_mqtt1.cmd.IndexOf("off")>=0)
                     {
-                        _port1.WriteLine(dataSendOff);
-                        // db.Insert_kaiguan(dataSendOff);
                         KEY.Text = "OFF";
+                        // db.Insert_kaiguan(_mqtt1.cmd);
                     }
                     _mqtt1.cmd = "";
                 }
